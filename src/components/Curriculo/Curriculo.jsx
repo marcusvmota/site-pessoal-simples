@@ -6,7 +6,7 @@ function Curriculo() {
   return (
     <>
       <section>
-        <h2>Resumo</h2>
+        <h2>Resum</h2>
         <p>{data.resumo}</p>
       </section>
 
