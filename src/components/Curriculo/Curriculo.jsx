@@ -1,6 +1,6 @@
 import React from "react"
 import "./Curriculo.css"
-import data from "./curriculo.json"
+import data from "./Curriculo.json"
 
 function Curriculo() {
   return (
