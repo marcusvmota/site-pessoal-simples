@@ -1,13 +1,14 @@
 import React from "react"
-import viniciusAvatar from "../../assets/foto elipse.png"
 import "./Header.css"
 
-function Header() {
+function Header(props) {
+  const { nome, cargo, foto } = props.informacoes
+
   return (
     <header>
-      <img src={viniciusAvatar} alt="Foto de rosto de Vinicius" />
-      <h1 id="nome-perfil">Marcus Vinicius</h1>
-      <h3 id="eventoSubtitulo">Desenvolvedor de Software</h3>
+      <img src={foto} alt="Foto de rosto de Vinicius" />
+      <h1 id="nome-perfil">{nome}</h1>
+      <h3 id="eventoSubtitulo">{cargo}</h3>
     </header>
   )
 }
