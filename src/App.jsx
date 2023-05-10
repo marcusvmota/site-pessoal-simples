@@ -31,8 +31,8 @@ function App() {
 
       setCurriculo({
         resumo: informacao.data.resumo,
-        experienciasAcademicas: experienciaAcademica.data,
-        experienciasProfissionais: experienciaProfissional.data,
+        experienciaAcademica: experienciaAcademica.data,
+        experienciaProfissional: experienciaProfissional.data,
       })
 
       const portfolio = await api.get("/portfolio")
@@ -48,9 +48,9 @@ function App() {
 
   return (
     <>
-      <Header informacoes={informacoes}></Header>
+      <Header informacoes={informacoes} />
       <BrowserRouter>
-        <NavBar></NavBar>
+        <NavBar />
         <Routes>
           <Route index element={<Curriculo curriculo={curriculo} />} />
           <Route
